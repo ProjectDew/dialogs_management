@@ -1,7 +1,10 @@
 # dialogs_management
 
-The table of contents of this repository can be found as an image in the base folder, along with another image showing a commented UML diagram of the inspector sections.
-For some quick documentation of the main classes in this repository, keep reading this document.
+The table of contents of this repository can be found as a PNG in the base folder. The following files are excluded from that table:
+ - A commented UML diagram showing how the inspector sections are structured (following a composite pattern).
+ - The _screenshots folder, which contains several images of an example inspector.
+ - The table of contents itself.
+ - This README document, which includes some documentation of the main classes in this repository.
 
 
 DIALOGS MANAGER - QUICK DOCUMENTATION
@@ -33,17 +36,17 @@ DIALOG VARIABLES MANAGER - QUICK DOCUMENTATION
 DIALOGS MANAGER CUSTOM INSPECTOR - QUICK DOCUMENTATION
 
  - CSV document. Loads an existing CSV document or creates a new one.
- - Row for language names. The number of the first row that the dialogs manager will examine in search of the current language (starting from 1).
- - Column for keywords. The number of the first column where the dialogs manager will look for the specified keywords (starting from 1).
+ - Row for language names. The number of the row that the dialogs manager will examine in search of the current language (starting from 1).
+ - Column for keywords. The number of the column where the dialogs manager will look for the specified keywords (starting from 1).
 
  - Load document. Loads the selected CSV document into the inspector, so that it can be edited from there. (Note that this is mainly thought for quick fixes or additions, and not to edit the document from scratch - although it is possible to do so.)
 
- - Rows. Shows the row that is currently displayed and the total number of rows in the document. It allows to "navigate" through them.
+ - Rows. Shows the row that is currently displayed, along with the total number of rows in the document and a couple of navigation arrows.
  - Remove row. Removes the row that is currently displayed.
  - Add row. Adds a new row and makes it the currently displayed one.
 
- - {Left column}. Shows one of the currently displayed columns.
- - {Right column}. Shows the other currently displayed column. The reason for having two columns is to facilitate comparisons (compare a keyword with its dialog or the original text with its translation in another language, for instance).
+ - {Left column}. Shows the number and "title" (retrieved from the row for language names) of the currently displayed column, as well as its content and two navigation arrows.
+ - {Right column}. Same as above. The reason for having two columns is to facilitate comparisons between different sets of data (a keyword and its correspondent dialog, the original text and its translation in a certain language, etc.).
  - Remove column. Removes the column above.
 
  - Columns. Shows the total number of columns in the document.
