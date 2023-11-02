@@ -70,4 +70,4 @@ DIALOGS MANAGER CUSTOM INSPECTOR - QUICK DOCUMENTATION
 
  - Min. Sets the minimum value for the runtime speed multiplier.
  - Max. Sets the maximum value for the runtime speed multiplier.
- - Current. Sets the current value for the runtime speed multiplier. If desired, this value will allow the player to change the speed at which the texts appear on screen, by multiplying their respective delay values (it can be set to zero in order to display them at once).
+ - Current. Sets the current value for the runtime speed multiplier. If desired, this multiplier will allow the player to change the speed at which all the texts appear on screen (it can be set to zero in order to display them at once, regardless of their actual delay values).
