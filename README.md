@@ -57,9 +57,9 @@ DIALOGS MANAGER CUSTOM INSPECTOR - QUICK DOCUMENTATION
 
  - Add new keywords from document. Compares the keywords in the document to those in the inspector and completes the latter with the ones that is lacking (if any).
 
- - TMP_Text. A list of all the texts that are linked to keywords.
+ - TMP_Text. A list of all the text objects that are linked to keywords.
  - Keyword. A list of all the keywords that are linked to TMP_Texts.
- - Delay multiplier. A list of all the multipliers connected to the texts and their dialogs. These multipliers will modify the base delay value of the characters in the dialogs connected to them. (This field will be hidden if the character configuration is too.)
+ - Delay multiplier. A list of multipliers connected to the texts and keywords. The delay values of each character in the correspondent dialogs will be multiplied by the value specified here, which is 1 by default. (This field will be hidden if the character configuration is not shown.)
  - Add new. Adds a new connection (one TMP_Text, one keyword and one delay multiplier).
 
  - SHOW CHARACTER CONFIGURATION. Shows the options that allow to add or modify span times between characters (including the delay multiplier above).
@@ -70,4 +70,4 @@ DIALOGS MANAGER CUSTOM INSPECTOR - QUICK DOCUMENTATION
 
  - Min. Sets the minimum value for the runtime speed multiplier.
  - Max. Sets the maximum value for the runtime speed multiplier.
- - Current. Sets the current value for the runtime speed multiplier. This value allows the player to change the speed at which the texts appear on screen, by multiplying their respective delays (it can be set to zero in order to display them at once).
+ - Current. Sets the current value for the runtime speed multiplier. If desired, this value will allow the player to change the speed at which the texts appear on screen, by multiplying their respective delay values (it can be set to zero in order to display them at once).
